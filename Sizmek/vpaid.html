@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'/>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            position: fixed;
+        }
+        *:not(input) {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -webkit-text-size-adjust: none;
+        }
+        #videoElement {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%
+        }
+    </style>
+    <script type='application/javascript' src='http://ds.serving-sys.com/BurstingScript/VPAIDAPI.js'></script>
+    <script type='application/javascript' src='../Default/vpaid.js?bitrate=300'></script>
+</head>
+<body>
+    <div id='videoAdLayer' style='height: 100%; width: 100%'>
+        <video id='videoElement' poster='data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs='>
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+</html>
