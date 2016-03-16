@@ -234,7 +234,7 @@
     };
 
     vpaid.fireAdResizeEvent = function() {
-        vpaid.VPAIDCreative.resizeAd(Math.max(screen.width, screen.height), Math.min(screen.width, screen.height), "fullscreen");
+        vpaid.VPAIDCreative.resizeAd(Math.max(screen.width, screen.height) - 48, Math.min(screen.width, screen.height) - 48, "fullscreen");
     };
 
     vpaid.fireAdExpandEvent = function() {
@@ -275,7 +275,7 @@
                     viewMode = "fullscreen";
                     desiredBitrate = 500;
 
-                    vpaid.VPAIDCreative.initAd(Math.max(screen.width, screen.height), Math.min(screen.width, screen.height), viewMode, desiredBitrate, JSON.stringify(vpaid.creativeData), environmentVars);
+                    vpaid.VPAIDCreative.initAd(Math.max(screen.width, screen.height) - 48, Math.min(screen.width, screen.height) - 48, viewMode, desiredBitrate, JSON.stringify(vpaid.creativeData), environmentVars);
 
                 } else {
                     log.e("VPAID version not supported");
