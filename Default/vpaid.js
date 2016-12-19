@@ -275,7 +275,7 @@
                     viewMode = "fullscreen";
                     desiredBitrate = 500;
 
-                    vpaid.VPAIDCreative.initAd(Math.max(screen.width, screen.height) - 48, Math.min(screen.width, screen.height) - 48, viewMode, desiredBitrate, JSON.stringify(vpaid.creativeData), environmentVars);
+                    vpaid.VPAIDCreative.initAd(window.innerWidth, window.innerHeight, viewMode, desiredBitrate, JSON.stringify(vpaid.creativeData), environmentVars);
 
                 } else {
                     log.e("VPAID version not supported");
