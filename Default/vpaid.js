@@ -291,5 +291,9 @@
         }
     };
 
+    vpaid.resizeAd = function() {
+        vpaid.VPAIDCreative.resizeAd(window.innerWidth, window.innerHeight, "fullscreen");
+    };
+
     console.log("VPAID object loaded");
 })();
